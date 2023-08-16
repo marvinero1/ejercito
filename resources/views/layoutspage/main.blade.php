@@ -2,14 +2,12 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
     <meta charset="utf-8">
-    <title>CarServ - Car Repair HTML Template</title>
+    <title>Ejercito</title>
     <meta content="" name="keywords">
     <meta content="" name="description">
 
      <!-- CSRF Token -->
      <meta name="csrf-token" content="{{ csrf_token() }}">
-
-     <title>Ejercito</title>
      <link rel="icon" href="./images/favicon.png">
      <!-- Scripts -->
      <script src="{{ asset('js/app.js') }}" defer></script>

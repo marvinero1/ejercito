@@ -63,4 +63,17 @@ class HomeController extends Controller
         return view('layoutspage.app');   
     }
 
+    public function pageGet(){
+        // $nombre_usuario = $request->get('buscarpor'); 
+        $postulantes = Postulante::all();
+        
+        // $users = DB::table('users')->with('roles')->;
+        //return view('admin.users.index', ['users' => User::with('roles')->sortable(['email' => 'asc'])->paginate()]);
+        return view('usuarios.index', compact('postulantes'));
+    }
+    
+
+
+
+
 }

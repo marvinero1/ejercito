@@ -24,5 +24,6 @@ Route::get('/admin', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/usuarios', 'HomeController@pageGet')->name('usuarios');
 
 Route::post('formregistro','HomeController@formregister')->name('form.formregistro');
