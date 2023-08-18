@@ -63,7 +63,73 @@
         </div>
     </div> --}}
     <!-- Spinner End -->
+    <header>
+      <div class="row">
+        <div class="col">
 
+        </div>
+        
+        <div class="col">
+           <nav class="navbar navbar-dark bg-dark">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </nav>
+        </div>
+      </div>
+
+      <div class="pos-f-t">
+        <div class="collapse" id="navbarToggleExternalContent">
+          <div class="bg-dark p-4 right" >
+            <a class="btnclosecollapse"  data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+              X
+            </a><br><br>
+            {{-- <h4 class="text-white">Collapsed contentaaaaaaa</h4> --}}
+            <ul class="list-group ">
+              <li class="list-group-item bg-dark">INICIO</li>
+              <li class="list-group-item bg-dark">RESEÑA HISTORICA</li>
+              <li class="list-group-item bg-dark">MISIÓN</li>
+              <li class="list-group-item bg-dark">VISIÓN</li>
+              <li class="list-group-item bg-dark">PERFIL DE EGRESO</li>
+              <li class="list-group-item bg-dark">ARMAS Y ESPECIALIDADES</li>
+              <li class="list-group-item bg-dark">SISTEMA</li>
+              <a href="/login"> <li class="list-group-item bg-dark">ADMISIÓN 2024</li></a>
+            </ul>
+          </div>
+        </div>
+      </div>
+    <style>
+        .navbar-dark{
+          cursor: pointer;
+          height: 88px;
+          right: 0;
+          line-height: 3.25em;
+          position: fixed;
+          text-align: right;
+          top: 0;
+          z-index: 10001;
+          float: right;
+          background-color: transparent !important;
+        }
+        .right{
+            color: #000;
+            height: 100%;
+            padding: 3rem 2rem;
+            position: fixed;
+            right: 0;
+            z-index: 10002;
+        }
+        .btnclosecollapse{
+          cursor: pointer;
+          float: right;
+          background: transparent !important;
+          color: white;
+        }
+        .list-group{
+          line-height: 5ex;
+        }
+    </style>
+    </header>
     <div>
         @yield('content')
       

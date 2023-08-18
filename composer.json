@@ -1,10 +1,11 @@
 {
-    "name": "laravel/laravel",
+    "name": "laravel/emse",
     "type": "project",
-    "description": "The Laravel Framework.",
+    "description": "Sistema Web EMSE",
     "keywords": [
-        "framework",
-        "laravel"
+        "EMSE",
+        "emse",
+        "escuela militar de sargentos maximiliano paredes tejerina"
     ],
     "license": "MIT",
     "require": {

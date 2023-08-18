@@ -1,34 +1,6 @@
 @extends('layoutspage.main')
 
 @section('content')
-<!-- Topbar Start -->
-{{-- <div class="container-fluid bg-light p-0">
-    <div class="row gx-0 d-none d-lg-flex">
-        <div class="col-lg-7 px-5 text-start">
-            <div class="h-100 d-inline-flex align-items-center py-3 me-4">
-                <small class="fa fa-map-marker-alt text-primary me-2"></small>
-                <small>123 Street, New York, USA</small>
-            </div>
-            <div class="h-100 d-inline-flex align-items-center py-3">
-                <small class="far fa-clock text-primary me-2"></small>
-                <small>Mon - Fri : 09.00 AM - 09.00 PM</small>
-            </div>
-        </div>
-        <div class="col-lg-5 px-5 text-end">
-            <div class="h-100 d-inline-flex align-items-center py-3 me-4">
-                <small class="fa fa-phone-alt text-primary me-2"></small>
-                <small>+012 345 6789</small>
-            </div>
-            <div class="h-100 d-inline-flex align-items-center">
-                <a class="btn btn-sm-square bg-white text-primary me-1" href=""><i class="fab fa-facebook-f"></i></a>
-                <a class="btn btn-sm-square bg-white text-primary me-1" href=""><i class="fab fa-twitter"></i></a>
-                <a class="btn btn-sm-square bg-white text-primary me-1" href=""><i class="fab fa-linkedin-in"></i></a>
-                <a class="btn btn-sm-square bg-white text-primary me-0" href=""><i class="fab fa-instagram"></i></a>
-            </div>
-        </div>
-    </div>
-</div> --}}
-<!-- Topbar End -->
 
 
 <!-- Navbar Start -->
@@ -66,18 +38,20 @@
     <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img class="w-100" src="images/img/carousel-bg-1.jpg" alt="Image">
+                <img class="w-100" src="images/img/carousel-bg-4.jpg" alt="Image">
                 <div class="carousel-caption d-flex align-items-center">
                     <div class="container">
                         <div class="row align-items-center justify-content-center justify-content-lg-start">
-                            <div class="col-10 col-lg-7 text-center text-lg-start">
-                                <h1 class="display-3 text-white mb-4 pb-3 animated slideInDown">EJERCITO DE BOLIVIA</h1>
-                                <h5 class="text-white text-uppercase mb-3 animated slideInDown">FORJADOR DE LA PATRIA</h5>
+                            <div class="col-12 col-lg-12 text-center text-center">
+                                <h1 class="display-3 text-white mb-4 pb-3 animated slideInDown">ESCUELA MILITAR</h1>
+                                <h1 class="display-3 text-white mb-4 pb-3 animated slideInDown">DE SARGENTOS DEL</h1>
+                                <h1 class="display-3 text-white mb-4 pb-3 animated slideInDown">EJERCITO </h1>
+                                <h1 class="display-3 text-white mb-4 pb-3 animated slideInDown">MAXIMILIANO PAREDES TEJERINA</h1>
                                 {{-- <a href="" class="btn btn-primary py-3 px-5 animated slideInDown"><i class="fa fa-arrow-right ms-3"></i></a> --}}
                             </div>
-                            <div class="col-lg-5 d-none d-lg-flex animated zoomIn">
+                            {{-- <div class="col-lg-5 d-none d-lg-flex animated zoomIn">
                                 <img class="img-fluid" src="images/img/carousel-1.png" alt="">
-                            </div>
+                            </div> --}}
                         </div>
                     </div>
                 </div>
@@ -87,13 +61,35 @@
                 <div class="carousel-caption d-flex align-items-center">
                     <div class="container">
                         <div class="row align-items-center justify-content-center justify-content-lg-start">
-                            <div class="col-10 col-lg-7 text-center text-lg-start">
-                                <h1 class="display-3 text-white mb-4 pb-3 animated slideInDown">EJERCITO DE BOLIVIA</h1>
-                                <h5 class="text-white text-uppercase mb-3 animated slideInDown">FORJADOR DE LA PATRIA</h5>
+                            <div class="col-12 col-lg-12 text-center text-center">
+                                <h1 class="display-3 text-white mb-4 pb-3 animated slideInDown">ESCUELA MILITAR</h1>
+                                <h1 class="display-3 text-white mb-4 pb-3 animated slideInDown">DE SARGENTOS DEL</h1>
+                                <h1 class="display-3 text-white mb-4 pb-3 animated slideInDown">EJERCITO </h1>
+                                <h1 class="display-3 text-white mb-4 pb-3 animated slideInDown">MAXIMILIANO PAREDES TEJERINA</h1>
+                                {{-- <a href="" class="btn btn-primary py-3 px-5 animated slideInDown"><i class="fa fa-arrow-right ms-3"></i></a> --}}
                             </div>
-                            <div class="col-lg-5 d-none d-lg-flex animated zoomIn">
-                                <img class="img-fluid" src="images/img/carousel-2.png" alt="">
+                            {{-- <div class="col-lg-5 d-none d-lg-flex animated zoomIn">
+                                <img class="img-fluid" src="images/img/carousel-1.png" alt="">
+                            </div> --}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="w-100" src="images/img/carousel-bg-5.jpg" alt="Image">
+                <div class="carousel-caption d-flex align-items-center">
+                    <div class="container">
+                        <div class="row align-items-center justify-content-center justify-content-lg-start">
+                            <div class="col-12 col-lg-12 text-center text-center">
+                                <h1 class="display-3 text-white mb-4 pb-3 animated slideInDown">ESCUELA MILITAR</h1>
+                                <h1 class="display-3 text-white mb-4 pb-3 animated slideInDown">DE SARGENTOS DEL</h1>
+                                <h1 class="display-3 text-white mb-4 pb-3 animated slideInDown">EJERCITO </h1>
+                                <h1 class="display-3 text-white mb-4 pb-3 animated slideInDown">MAXIMILIANO PAREDES TEJERINA</h1>
+                                {{-- <a href="" class="btn btn-primary py-3 px-5 animated slideInDown"><i class="fa fa-arrow-right ms-3"></i></a> --}}
                             </div>
+                            {{-- <div class="col-lg-5 d-none d-lg-flex animated zoomIn">
+                                <img class="img-fluid" src="images/img/carousel-1.png" alt="">
+                            </div> --}}
                         </div>
                     </div>
                 </div>

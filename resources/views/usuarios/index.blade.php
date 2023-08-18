@@ -1,8 +1,9 @@
 @extends('layouts.main')
 
 @section('content')
-<!-- page content -->
-<div class="content p-3 "  style="margin-left: 4.6rem!important;">
+<div class="content-wrapper pt-3">
+    <!-- page content -->
+<div class="content p-3">
     <div class="row">
         @if(Session::has('message'))
             <div class="alert alert-info">{{ Session::get('message') }}</div>
@@ -88,5 +89,7 @@
     </div>
 </div>
 <!-- /page content -->
+</div>
+
 
 @endsection
