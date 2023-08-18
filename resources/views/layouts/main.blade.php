@@ -25,8 +25,8 @@
 </head>
 </html>
 
-<body class="hold-transition sidebar-mini layout-fixed">
-    <div class="wrapper">
+<body class="hold-transition sidebar-mini layout-fixed ">
+    <div class="">
         @include('layouts.header')
     
         @yield('content')

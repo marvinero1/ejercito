@@ -2,7 +2,7 @@
 
 @section('content')
 <!-- page content -->
-<div class="content p-3">
+<div class="content p-3 "  style="margin-left: 4.6rem!important;">
     <div class="row">
         @if(Session::has('message'))
             <div class="alert alert-info">{{ Session::get('message') }}</div>
