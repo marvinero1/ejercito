@@ -25,7 +25,8 @@
   </head>
 </html>
 
-<body class="hold-transition sidebar-mini layout-fixed">
+<body class="hold-transition sidebar-mini layout-fixed"  ondragstart="alert('No se puede 😌');return false" oncontextmenu="alert('No se puede seleccionar 😌');return false"
+onselectstart="return false">
   <div class="">
     @include('layouts.header')
 

@@ -15,7 +15,7 @@ class HomeController extends Controller
      */
     public function __construct()
     {
-        // $this->middleware('auth');
+       $this->middleware('auth');
         // middleware de login ACTIVARLO
     }
 
@@ -28,52 +28,6 @@ class HomeController extends Controller
     {
         return view('home');
     }
-
-    public function formregister(Request $request){
-
-        $request->validate([
-            'primer_nombre' => 'required',
-            'segundo_nombre' => 'nullable', 
-            'primer_apellido' => 'nullable',
-            'segundo_apellido' => 'nullable',
-            'email' => 'required',
-        ]);
-        
-        // if(request()->has('imagen')){
-        //     $imagesUploaded = request()->file('imagen');
-        //     $imageName = time() . '.' . $imagesUploaded->getClientOriginalExtension();
-        //     $imagenpath = public_path('/images/titulos/');
-        //     $imagesUploaded->move($imagenpath, $imageName);
-        //     $imagen = '/images/titulos/' .$imageName;   
-        // } 
-
-        Postulante::create([
-            'primer_nombre' => $request->primer_nombre,
-            'segundo_nombre' => $request->segundo_nombre,
-            'primer_apellido' => $request->primer_apellido,
-            'segundo_apellido' => $request->segundo_apellido,
-            'email' => $request->email,
-            'celular' => $request->celular,
-            'ciudad' => $request->ciudad,
-            'whatsapp' => $request->whatsapp,
-            'telefono' => $request->telefono,
-        ]);
-
-        Session::flash('message','Formulario Exitoso, revise la bandeja de entrada de su correo!');
-        return view('layoutspage.app');   
-    }
-
-    public function pageGet(){
-        // $nombre_usuario = $request->get('buscarpor'); 
-        $postulantes = Postulante::all();
-        
-        // $users = DB::table('users')->with('roles')->;
-        //return view('admin.users.index', ['users' => User::with('roles')->sortable(['email' => 'asc'])->paginate()]);
-        return view('usuarios.index', compact('postulantes'));
-    }
-    
-
-
 
 
 }

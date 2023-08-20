@@ -13,17 +13,46 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Auth::routes();
+
 Route::get('/', function () {
     return view('layoutspage.app');
 });
 
-Route::get('/admin', function () {
-    return view('index');
+Route::get('/login', function () {
+    return view('login');
 });
 
-Auth::routes();
+Route::get('/historia', function () {
+    return view('historica.index');
+});
 
-Route::get('/home', 'HomeController@index')->name('home');
-Route::get('/usuarios', 'HomeController@pageGet')->name('usuarios');
+Route::get('/mision', function () {
+    return view('mision.index');
+});
 
-Route::post('formregistro','HomeController@formregister')->name('form.formregistro');
+Route::get('/vision', function () {
+    return view('vision.index');
+});
+
+Route::get('/armas', function () {
+    return view('armas.index');
+});
+
+
+Route::resource('postulante', 'PostulanteController');
+Route::get('downloadsHNWSBKEJS','ProspectoController@download')->name('downloadsHNWSBKEJS');
+
+
+Route::middleware(['auth'] )->group(function (){
+
+    Route::get('/usuarios', 'HomeController@pageGet')->name('usuarios');
+    Route::get('/home', 'HomeController@index')->name('home');
+    Route::resource('prospecto', 'ProspectoController');
+
+
+    Route::get('/admin', function () {
+        return view('index');
+    });
+
+});

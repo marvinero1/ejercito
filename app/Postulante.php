@@ -27,5 +27,7 @@ class Postulante extends Model
                         'ciudad',
                         'whatsapp',
                         'telefono',
+                        'code',
+                        'boucher'
                         ];
 }

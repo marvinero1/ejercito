@@ -70,12 +70,21 @@
         </div>
     </div>
 </div> --}}
+        
+
 <div class="content" style="height: 100%;">
+    @if (Session::has('message'))
+<div class="alert alert-success">{{ Session::get('message') }}</div>
+@endif
+@if (Session::has('error'))
+<div class="alert alert-danger">{{ Session::get('error') }}</div>
+@endif
     <div class="row" style="height: 100%; margin: 0;">
+
         <div class="col-md-6 right">
             <div>
-                <div class="login_wrapper" style="height: 100%; position: relative;">
-                    <div class="animate form login_form" style="position: absolute; top: 13%;">
+                <div class="login_wrapper">
+                    <div class="animate form login_form" >
                         <section class="login_content login_content-login">
                             <a href="/"><img src="../assets/images/icon.png" alt="logo" width="100px"></a><br>
                             @if(config('auth.users.registration'))
@@ -118,17 +127,6 @@
                                         </div>
                                     </div>
             
-                                    <div class="form-group row">
-                                        <div class="col-md-6 offset-md-4">
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
-            
-                                                <label class="form-check-label" for="remember">
-                                                    {{ __('Remember Me') }}
-                                                </label>
-                                            </div>
-                                        </div>
-                                    </div>
             
                                     <div class="form-group row mb-0">
                                         <div class="col-md-8 offset-md-4">
@@ -136,15 +134,21 @@
                                                 {{ __('Login') }}
                                             </button>
             
-                                            @if (Route::has('password.request'))
+                                            {{-- @if (Route::has('password.request'))
                                                 <a class="btn btn-link" href="{{ route('password.request') }}">
                                                     {{ __('Forgot Your Password?') }}
                                                 </a>
-                                            @endif
+                                            @endif --}}
                                         </div>
                                     </div>
                                 </form>
                             </div>
+
+                            <div class="card">
+                                <div class="card-body" style="color: black !important;">
+                                 Nota: Ingreso por unica vez en caso de presentar fallas comunicarse con: 77777777
+                                </div>
+                              </div>
                         </section>
                     </div>
                 </div>
@@ -155,21 +159,24 @@
             <div class="bgImgCoverPages"></div>
         </div>
     </div>
-</div>
+{{-- </div> --}}
 
 
 @endsection
 <style>
+    .body{
+        height: 100%; 
+        margin: 0;
+    }
     .login{
         background: #093070 !important;
     }
     #bg-cover-login{
-        background: url(/images/img/carousel-bg-5.jpg);
+        background: url(/images/img/carousel-bg-6.jpg);
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
         padding: 0;
-        /* box-shadow: 5px -5px 5px 0px #FFCB00; */
     }
     a{
         color: white;
@@ -189,7 +196,7 @@ background: linear-gradient(180deg, rgba(120,134,107,1) 28%, rgba(120,134,107,0.
     }
     .login_content-login{
         margin: 0 auto;
-        padding: 25px 0 0;
+        padding: 65px 0 50px;
         position: relative;
         text-align: center;
         text-shadow: 0 1px 0 rgba(9,45,116,1) !important;
