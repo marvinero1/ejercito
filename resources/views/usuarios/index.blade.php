@@ -39,35 +39,24 @@
                     <table class="table">
                         <thead>
                             <tr>
-                                <th>Primer Nombre</th>
-                                <th>Segundo Nombre</th>
-                                <th>Ap. Pat</th>
-                                <th>Ap. Mat</th>
+                                <th>Nombre</th>
                                 <th>Email</th>
-                                <th>Celular</th>
-                                <th>Ciudad</th>
-                                <th>Whatsapp</th>
-                                <th>Telefono</th>
+                                <th>Role</th>
                                 <th>Creado en Fecha</th>
                                 {{-- <th>Acciones</th> --}}
                             </tr>
                         </thead>
 
                         <tbody>
-                            @foreach($postulantes as $postulantess)
+                            @foreach($usuarios as $usuarioss)
                             <tr>
-                                <td scope="row">{{ strtoupper($postulantess->primer_nombre) }}</td>
-                                <td scope="row">{{ strtoupper($postulantess->segundo_nombre) }}</td>
-                                <td scope="row">{{ strtoupper($postulantess->primer_apellido) }}</td>
-                                <td scope="row">{{ strtoupper($postulantess->segundo_apellido) }}</td>
-                                <td scope="row">{{ strtoupper($postulantess->email) }}</td>
-                                <td scope="row">{{ strtoupper($postulantess->celular) }}</td>
-                                <td scope="row">{{ strtoupper($postulantess->ciudad) }}</td>
-                                <td scope="row">{{ strtoupper($postulantess->whatsapp) }}</td>
-                                <td scope="row">{{ strtoupper($postulantess->telefono) }}</td>
-                                <td scope="row">{{ strtoupper($postulantess->created_at) }}</td>
-                                {{-- <td scope="row" style="text-align:center;">                         
-                                    <form action="{{ route('admin.carusel.destroy',$postulantes->id ) }}" method="POST"
+                                <td scope="row">{{ strtoupper($usuarioss->name) }}</td>
+                                <td scope="row">{{ strtoupper($usuarioss->email) }}</td>
+                                <td scope="row">{{ strtoupper($usuarioss->role) }}</td>
+                                <td scope="row">{{ strtoupper($usuarioss->created_at) }}</td>
+                   
+                                <td scope="row" style="text-align:center;">                         
+                                    <form action="{{ route('usuarios.destroy',$usuarioss->id ) }}" method="POST"
                                         accept-charset="UTF-8" style="display:inline">
                                         @csrf
                                         @method('DELETE')
@@ -75,7 +64,7 @@
                                             onclick="return confirm(&quot;¿Desea eliminar?&quot;)"><i
                                                 class="fa fas fa-trash" aria-hidden="true"></i> Eliminar</button>
                                     </form>
-                                </td> --}}
+                                </td>
                             </tr>
                             @endforeach
                         </tbody>

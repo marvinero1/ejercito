@@ -44,6 +44,7 @@ class PostulanteController extends Controller
      */
     public function store(Request $request){
         $imagen = null;
+        $path = storage_path("/app/public/documents/prospecto/PDF_DE_PRUEBA_PROSPECTO.pdf");
         
 
         $request->validate([
@@ -89,7 +90,10 @@ class PostulanteController extends Controller
         
 
         Session::flash('message','Formulario Exitoso!');
-        return redirect('/login');     
+
+        $path = storage_path("/app/public/documents/prospecto/PDF_DE_PRUEBA_PROSPECTO.pdf");
+
+        return response()->download($path);     
     }
 
     /**
@@ -101,6 +105,22 @@ class PostulanteController extends Controller
     public function show(cr $cr)
     {
         //
+    }
+
+    public function getPostulantes(Request $request){
+        $primer_nombre = $request->get('buscarpor');
+        
+        $postulantes = Postulante::where('primer_nombre','like',"%$primer_nombre%")->latest()->get();
+        //dd($banco);
+        return view('postulantes.index', compact('postulantes'));
+    }
+
+    public function getUsuarios(Request $request){
+        $primer_nombre = $request->get('buscarpor');
+        
+        $usuarios = User::where('name','like',"%$primer_nombre%")->latest()->get();
+        //dd($banco);
+        return view('usuarios.index', compact('usuarios'));
     }
 
     /**
@@ -132,8 +152,11 @@ class PostulanteController extends Controller
      * @param  \App\cr  $cr
      * @return \Illuminate\Http\Response
      */
-    public function destroy(cr $cr)
-    {
-        //
+    public function destroy(cr $cr){
+        $postulante = Postulante::find($id);
+        $postulante->delete();
+
+        Session::flash('message','Postulante Eliminado Exitosamente!');
+        return redirect()->route('getPostulantes');
     }
 }

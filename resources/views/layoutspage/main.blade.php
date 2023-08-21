@@ -3,18 +3,16 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Ejercito</title>
+    <title>EMSE</title>
     <meta content="" name="keywords">
     <meta content="" name="description">
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <link rel="icon" href="./images/favicon.png">
+
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
-
-    <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+ 
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,8 +23,10 @@
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
-
     <!-- Styles -->
+
+    <!-- Favicon -->
+    <link href="favicon.ico" rel="icon">
 
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('/page/lib/wow/wow.min.js') }}" rel="stylesheet">
@@ -154,7 +154,7 @@ onselectstart="return false">
             <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img class="w-100" src="images/img/carousel-bg-4.jpg" alt="Image">
+                        <img class="w-100" src="images/img/portada/background-bg-1.jpg" alt="Image">
                         <div class="carousel-caption d-flex align-items-center">
                             <div class="container">
                                 <div class="row align-items-center justify-content-center justify-content-lg-start">
@@ -176,7 +176,7 @@ onselectstart="return false">
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img class="w-100" src="images/img/carousel-bg-2.jpg" alt="Image">
+                        <img class="w-100" src="images/img/portada/background-bg-2.jpg" alt="Image">
                         <div class="carousel-caption d-flex align-items-center">
                             <div class="container">
                                 <div class="row align-items-center justify-content-center justify-content-lg-start">
@@ -198,7 +198,7 @@ onselectstart="return false">
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img class="w-100" src="images/img/carousel-bg-5.jpg" alt="Image">
+                        <img class="w-100" src="images/img/portada/background-bg-3.jpg" alt="Image">
                         <div class="carousel-caption d-flex align-items-center">
                             <div class="container">
                                 <div class="row align-items-center justify-content-center justify-content-lg-start">
@@ -215,6 +215,91 @@ onselectstart="return false">
                                     {{-- <div class="col-lg-5 d-none d-lg-flex animated zoomIn">
                               <img class="img-fluid" src="images/img/carousel-1.png" alt="">
                           </div> --}}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="w-100" src="images/img/portada/background-bg-4.jpg" alt="Image">
+                        <div class="carousel-caption d-flex align-items-center">
+                            <div class="container">
+                                <div class="row align-items-center justify-content-center justify-content-lg-start">
+                                    <div class="col-12 col-lg-12 text-center text-center">
+                                        <h1 class="display-3 text-white mb-4 pb-3 animated slideInDown">ESCUELA MILITAR
+                                        </h1>
+                                        <h1 class="display-3 text-white mb-4 pb-3 animated slideInDown">DE SARGENTOS DEL
+                                        </h1>
+                                        <h1 class="display-3 text-white mb-4 pb-3 animated slideInDown">EJERCITO </h1>
+                                        <h1 class="display-3 text-white mb-4 pb-3 animated slideInDown">MAXIMILIANO
+                                            PAREDES TEJERINA</h1>
+                                        {{-- <a href="" class="btn btn-primary py-3 px-5 animated slideInDown"><i class="fa fa-arrow-right ms-3"></i></a> --}}
+                                    </div>
+                                    {{-- <div class="col-lg-5 d-none d-lg-flex animated zoomIn">
+                              <img class="img-fluid" src="images/img/carousel-1.png" alt="">
+                          </div> --}}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="w-100" src="images/img/portada/background-bg-5.jpg" alt="Image">
+                        <div class="carousel-caption d-flex align-items-center">
+                            <div class="container">
+                                <div class="row align-items-center justify-content-center justify-content-lg-start">
+                                    <div class="col-12 col-lg-12 text-center text-center">
+                                        <h1 class="display-3 text-white mb-4 pb-3 animated slideInDown">ESCUELA MILITAR
+                                        </h1>
+                                        <h1 class="display-3 text-white mb-4 pb-3 animated slideInDown">DE SARGENTOS DEL
+                                        </h1>
+                                        <h1 class="display-3 text-white mb-4 pb-3 animated slideInDown">EJERCITO </h1>
+                                        <h1 class="display-3 text-white mb-4 pb-3 animated slideInDown">MAXIMILIANO
+                                            PAREDES TEJERINA</h1>
+                                        {{-- <a href="" class="btn btn-primary py-3 px-5 animated slideInDown"><i class="fa fa-arrow-right ms-3"></i></a> --}}
+                                    </div>
+                                    {{-- <div class="col-lg-5 d-none d-lg-flex animated zoomIn">
+                              <img class="img-fluid" src="images/img/carousel-1.png" alt="">
+                          </div> --}}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="w-100" src="images/img/portada/background-bg-6.jpg" alt="Image">
+                        <div class="carousel-caption d-flex align-items-center">
+                            <div class="container">
+                                <div class="row align-items-center justify-content-center justify-content-lg-start">
+                                    <div class="col-12 col-lg-12 text-center text-center">
+                                        <h1 class="display-3 text-white mb-4 pb-3 animated slideInDown">ESCUELA MILITAR
+                                        </h1>
+                                        <h1 class="display-3 text-white mb-4 pb-3 animated slideInDown">DE SARGENTOS DEL
+                                        </h1>
+                                        <h1 class="display-3 text-white mb-4 pb-3 animated slideInDown">EJERCITO </h1>
+                                        <h1 class="display-3 text-white mb-4 pb-3 animated slideInDown">MAXIMILIANO
+                                            PAREDES TEJERINA</h1>
+                                        {{-- <a href="" class="btn btn-primary py-3 px-5 animated slideInDown"><i class="fa fa-arrow-right ms-3"></i></a> --}}
+                                    </div>
+                                    {{-- <div class="col-lg-5 d-none d-lg-flex animated zoomIn">
+                              <img class="img-fluid" src="images/img/carousel-1.png" alt="">
+                          </div> --}}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="w-100" src="images/img/portada/background-bg-7.jpg" alt="Image">
+                        <div class="carousel-caption d-flex align-items-center">
+                            <div class="container">
+                                <div class="row align-items-center justify-content-center justify-content-lg-start">
+                                    <div class="col-12 col-lg-12 text-center text-center">
+                                        <h1 class="display-3 text-white mb-4 pb-3 animated slideInDown">ESCUELA MILITAR
+                                        </h1>
+                                        <h1 class="display-3 text-white mb-4 pb-3 animated slideInDown">DE SARGENTOS DEL
+                                        </h1>
+                                        <h1 class="display-3 text-white mb-4 pb-3 animated slideInDown">EJERCITO </h1>
+                                        <h1 class="display-3 text-white mb-4 pb-3 animated slideInDown">MAXIMILIANO
+                                            PAREDES TEJERINA</h1>
+                                        {{-- <a href="" class="btn btn-primary py-3 px-5 animated slideInDown"><i class="fa fa-arrow-right ms-3"></i></a> --}}
+                                    </div>
                                 </div>
                             </div>
                         </div>

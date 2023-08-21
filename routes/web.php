@@ -19,9 +19,7 @@ Route::get('/', function () {
     return view('layoutspage.app');
 });
 
-Route::get('/login', function () {
-    return view('login');
-});
+
 
 Route::get('/historia', function () {
     return view('historica.index');
@@ -46,7 +44,11 @@ Route::get('downloadsHNWSBKEJS','ProspectoController@download')->name('downloads
 
 Route::middleware(['auth'] )->group(function (){
 
-    Route::get('/usuarios', 'HomeController@pageGet')->name('usuarios');
+    Route::get('/getPostulantes', 'PostulanteController@getPostulantes')->name('getPostulantes');
+    Route::get('/getUsuarios', 'PostulanteController@getUsuarios')->name('getUsuarios');
+    Route::resource('usuarios', 'UsuarioController');
+
+
     Route::get('/home', 'HomeController@index')->name('home');
     Route::resource('prospecto', 'ProspectoController');
 
