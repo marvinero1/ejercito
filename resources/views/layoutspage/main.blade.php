@@ -68,10 +68,7 @@ onselectstart="return false">
 
     <header>
         <div class="row">
-            <div class="col">
-
-            </div>
-
+            <div class="col"></div>
             <div class="col">
                 <nav class="navbar navbar-dark bg-dark">
                     <button class="navbar-toggler" type="button" data-toggle="collapse"
@@ -88,22 +85,20 @@ onselectstart="return false">
                 <div class="bg-dark p-4 right">
                     <a class="btnclosecollapse" data-toggle="collapse" data-target="#navbarToggleExternalContent"
                         aria-controls="navbarToggleExternalContent" aria-expanded="false"
-                        aria-label="Toggle navigation">
-                        X
-                    </a><br><br>
-                    {{-- <h4 class="text-white">Collapsed contentaaaaaaa</h4> --}}
+                        aria-label="Toggle navigation"> X
+                    </a><br>
                     <ul class="list-group ">
                         <a href="/"><li class="list-group-item bg-dark">INICIO</li></a> 
                         <a href="/historia"><li class="list-group-item bg-dark">RESEÑA HISTORICA</li></a> 
                         <a href="/mision"><li class="list-group-item bg-dark">MISIÓN</li></a> 
                         <a href="/vision"><li class="list-group-item bg-dark">VISIÓN</li></a> 
-                        <a href="/"> <li class="list-group-item bg-dark">PERFIL DE EGRESO</li></a> 
+                        <a href="/ingreso"> <li class="list-group-item bg-dark">PERFIL DE INGRESO</li></a> 
+                        <a href="/egreso"> <li class="list-group-item bg-dark">PERFIL DE EGRESO</li></a> 
                         <a href="/armas"> <li class="list-group-item bg-dark">ARMAS Y ESPECIALIDADES</li></a> 
-                        <a href="/postulante">
+                        <a href="/admision">
                             <li class="list-group-item bg-dark">ADMISIÓN 2024</li>
                         </a>
-                      
-                        <a href="/login">
+                        <a href="/postulante">
                             <li class="list-group-item bg-dark">PROSPECTO</li>
                         </a> 
                         <a href="/login">
@@ -150,49 +145,42 @@ onselectstart="return false">
     </header>
     <div>
         <!-- Carousel Start -->
-        <div class="container-fluid p-0 mb-5">
+        <div class="container-fluid p-0">
             <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img class="w-100" src="images/img/portada/background-bg-1.jpg" alt="Image">
+                        <img class="w-100" src="images/img/portada/background-bg-1.jpg" alt="portada">
                         <div class="carousel-caption d-flex align-items-center">
                             <div class="container">
                                 <div class="row align-items-center justify-content-center justify-content-lg-start">
                                     <div class="col-12 col-lg-12 text-center text-center">
-                                        <h1 class="display-3 text-white mb-4 pb-3 animated slideInDown">ESCUELA MILITAR
-                                        </h1>
-                                        <h1 class="display-3 text-white mb-4 pb-3 animated slideInDown">DE SARGENTOS DEL
-                                        </h1>
-                                        <h1 class="display-3 text-white mb-4 pb-3 animated slideInDown">EJERCITO </h1>
-                                        <h1 class="display-3 text-white mb-4 pb-3 animated slideInDown">MAXIMILIANO
-                                            PAREDES TEJERINA</h1>
+                                        <p class="display-3 text-white mb-4 pb-3 animated slideInDown1">FORMAMOS SARGENTOS PARA EL FUTURO DE BOLIVIA</p>
+                                        <hr>
+                                        <h1 class="display-3 text-white mb-4 pb-3 animated slideInDown"><strong>E.M.S.E.</strong></h1>
                                         {{-- <a href="" class="btn btn-primary py-3 px-5 animated slideInDown"><i class="fa fa-arrow-right ms-3"></i></a> --}}
                                     </div>
                                     {{-- <div class="col-lg-5 d-none d-lg-flex animated zoomIn">
-                              <img class="img-fluid" src="images/img/carousel-1.png" alt="">
-                          </div> --}}
+                                            <img class="img-fluid" src="images/img/carousel-1.png" alt="">
+                                        </div> --}}
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="carousel-item">
+                     <div class="carousel-item">
                         <img class="w-100" src="images/img/portada/background-bg-2.jpg" alt="Image">
                         <div class="carousel-caption d-flex align-items-center">
                             <div class="container">
                                 <div class="row align-items-center justify-content-center justify-content-lg-start">
                                     <div class="col-12 col-lg-12 text-center text-center">
-                                        <h1 class="display-3 text-white mb-4 pb-3 animated slideInDown">ESCUELA MILITAR
-                                        </h1>
-                                        <h1 class="display-3 text-white mb-4 pb-3 animated slideInDown">DE SARGENTOS DEL
-                                        </h1>
-                                        <h1 class="display-3 text-white mb-4 pb-3 animated slideInDown">EJERCITO </h1>
-                                        <h1 class="display-3 text-white mb-4 pb-3 animated slideInDown">MAXIMILIANO
-                                            PAREDES TEJERINA</h1>
-                                        {{-- <a href="" class="btn btn-primary py-3 px-5 animated slideInDown"><i class="fa fa-arrow-right ms-3"></i></a> --}}
+                                        <p class="display-3 text-white mb-4 pb-3 animated slideInDown1">
+                                            MAXIMILIANO PAREDES TEJERINA, MUERTO HERÓICAMENTE, </p>
+                                        <p class="display-3 text-white mb-4 pb-3 animated slideInDown1">
+                                            EN DEFENSA DE LA PATRIA,
+                                            EN EL COMBATE DE RIOSHIÑO EL AÑO 1900
+                                        </p>
+                                        <hr>
+                                        <h1 class="display-3 text-white mb-4 pb-3 animated slideInDown"><strong>E.M.S.E.</strong></h1>
                                     </div>
-                                    {{-- <div class="col-lg-5 d-none d-lg-flex animated zoomIn">
-                              <img class="img-fluid" src="images/img/carousel-1.png" alt="">
-                          </div> --}}
                                 </div>
                             </div>
                         </div>
@@ -203,18 +191,11 @@ onselectstart="return false">
                             <div class="container">
                                 <div class="row align-items-center justify-content-center justify-content-lg-start">
                                     <div class="col-12 col-lg-12 text-center text-center">
-                                        <h1 class="display-3 text-white mb-4 pb-3 animated slideInDown">ESCUELA MILITAR
-                                        </h1>
-                                        <h1 class="display-3 text-white mb-4 pb-3 animated slideInDown">DE SARGENTOS DEL
-                                        </h1>
-                                        <h1 class="display-3 text-white mb-4 pb-3 animated slideInDown">EJERCITO </h1>
-                                        <h1 class="display-3 text-white mb-4 pb-3 animated slideInDown">MAXIMILIANO
-                                            PAREDES TEJERINA</h1>
-                                        {{-- <a href="" class="btn btn-primary py-3 px-5 animated slideInDown"><i class="fa fa-arrow-right ms-3"></i></a> --}}
+                                        <p class="display-3 text-white mb-4 pb-3 animated slideInDown1">
+                                            CUANDO EL CLARIN DE LA PATRIA LLAMA, HASTA EL LLANTO DE LAS MADRES CALLA</p>
+                                        <hr>
+                                        <h1 class="display-3 text-white mb-4 pb-3 animated slideInDown"><strong>E.M.S.E.</strong></h1>
                                     </div>
-                                    {{-- <div class="col-lg-5 d-none d-lg-flex animated zoomIn">
-                              <img class="img-fluid" src="images/img/carousel-1.png" alt="">
-                          </div> --}}
                                 </div>
                             </div>
                         </div>
@@ -225,18 +206,16 @@ onselectstart="return false">
                             <div class="container">
                                 <div class="row align-items-center justify-content-center justify-content-lg-start">
                                     <div class="col-12 col-lg-12 text-center text-center">
-                                        <h1 class="display-3 text-white mb-4 pb-3 animated slideInDown">ESCUELA MILITAR
-                                        </h1>
-                                        <h1 class="display-3 text-white mb-4 pb-3 animated slideInDown">DE SARGENTOS DEL
-                                        </h1>
-                                        <h1 class="display-3 text-white mb-4 pb-3 animated slideInDown">EJERCITO </h1>
-                                        <h1 class="display-3 text-white mb-4 pb-3 animated slideInDown">MAXIMILIANO
-                                            PAREDES TEJERINA</h1>
-                                        {{-- <a href="" class="btn btn-primary py-3 px-5 animated slideInDown"><i class="fa fa-arrow-right ms-3"></i></a> --}}
+                                        <p class="display-3 text-white mb-4 pb-3 animated slideInDown1">
+                                            EL HONOR SERA MI PRIMERA VIRTUD MILITAR Y MI FUENTE DE INSPIRACION, 
+                                        </p>
+                                        <p class="display-3 text-white mb-4 pb-3 animated slideInDown1">
+                                            OBSERVARÉ DISCIPLINA, LEALTAD EN TODO LUGAR Y CIRCUNSTANCIA.
+                                        </p>
+
+                                        <hr>
+                                        <h1 class="display-3 text-white mb-4 pb-3 animated slideInDown"><strong>E.M.S.E.</strong></h1>
                                     </div>
-                                    {{-- <div class="col-lg-5 d-none d-lg-flex animated zoomIn">
-                              <img class="img-fluid" src="images/img/carousel-1.png" alt="">
-                          </div> --}}
                                 </div>
                             </div>
                         </div>
@@ -247,18 +226,11 @@ onselectstart="return false">
                             <div class="container">
                                 <div class="row align-items-center justify-content-center justify-content-lg-start">
                                     <div class="col-12 col-lg-12 text-center text-center">
-                                        <h1 class="display-3 text-white mb-4 pb-3 animated slideInDown">ESCUELA MILITAR
-                                        </h1>
-                                        <h1 class="display-3 text-white mb-4 pb-3 animated slideInDown">DE SARGENTOS DEL
-                                        </h1>
-                                        <h1 class="display-3 text-white mb-4 pb-3 animated slideInDown">EJERCITO </h1>
-                                        <h1 class="display-3 text-white mb-4 pb-3 animated slideInDown">MAXIMILIANO
-                                            PAREDES TEJERINA</h1>
-                                        {{-- <a href="" class="btn btn-primary py-3 px-5 animated slideInDown"><i class="fa fa-arrow-right ms-3"></i></a> --}}
+                                        <p class="display-3 text-white mb-4 pb-3 animated slideInDown1">
+                                            CUANDO EL CLARIN DE LA PATRIA LLAMA, HASTA EL LLANTO DE LAS MADRES CALLA</p>
+                                        <hr>
+                                        <h1 class="display-3 text-white mb-4 pb-3 animated slideInDown"><strong>E.M.S.E.</strong></h1>
                                     </div>
-                                    {{-- <div class="col-lg-5 d-none d-lg-flex animated zoomIn">
-                              <img class="img-fluid" src="images/img/carousel-1.png" alt="">
-                          </div> --}}
                                 </div>
                             </div>
                         </div>
@@ -269,18 +241,11 @@ onselectstart="return false">
                             <div class="container">
                                 <div class="row align-items-center justify-content-center justify-content-lg-start">
                                     <div class="col-12 col-lg-12 text-center text-center">
-                                        <h1 class="display-3 text-white mb-4 pb-3 animated slideInDown">ESCUELA MILITAR
-                                        </h1>
-                                        <h1 class="display-3 text-white mb-4 pb-3 animated slideInDown">DE SARGENTOS DEL
-                                        </h1>
-                                        <h1 class="display-3 text-white mb-4 pb-3 animated slideInDown">EJERCITO </h1>
-                                        <h1 class="display-3 text-white mb-4 pb-3 animated slideInDown">MAXIMILIANO
-                                            PAREDES TEJERINA</h1>
+                                        <p class="display-3 text-white mb-4 pb-3 animated slideInDown1">FORMAMOS SARGENTOS PARA EL FUTURO DE BOLIVIA</p>
+                                        <hr>
+                                        <h1 class="display-3 text-white mb-4 pb-3 animated slideInDown"><strong>E.M.S.E.</strong></h1>
                                         {{-- <a href="" class="btn btn-primary py-3 px-5 animated slideInDown"><i class="fa fa-arrow-right ms-3"></i></a> --}}
                                     </div>
-                                    {{-- <div class="col-lg-5 d-none d-lg-flex animated zoomIn">
-                              <img class="img-fluid" src="images/img/carousel-1.png" alt="">
-                          </div> --}}
                                 </div>
                             </div>
                         </div>
@@ -291,19 +256,15 @@ onselectstart="return false">
                             <div class="container">
                                 <div class="row align-items-center justify-content-center justify-content-lg-start">
                                     <div class="col-12 col-lg-12 text-center text-center">
-                                        <h1 class="display-3 text-white mb-4 pb-3 animated slideInDown">ESCUELA MILITAR
-                                        </h1>
-                                        <h1 class="display-3 text-white mb-4 pb-3 animated slideInDown">DE SARGENTOS DEL
-                                        </h1>
-                                        <h1 class="display-3 text-white mb-4 pb-3 animated slideInDown">EJERCITO </h1>
-                                        <h1 class="display-3 text-white mb-4 pb-3 animated slideInDown">MAXIMILIANO
-                                            PAREDES TEJERINA</h1>
+                                        <p class="display-3 text-white mb-4 pb-3 animated slideInDown1">CUANDO EL CLARIN DE LA PATRIA LLAMA, HASTA EL LLANTO DE LAS MADRES CALLA</p>
+                                        <hr>
+                                        <h1 class="display-3 text-white mb-4 pb-3 animated slideInDown"><strong>E.M.S.E.</strong></h1>
                                         {{-- <a href="" class="btn btn-primary py-3 px-5 animated slideInDown"><i class="fa fa-arrow-right ms-3"></i></a> --}}
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> 
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel"
                     data-bs-slide="prev">
@@ -336,7 +297,24 @@ onselectstart="return false">
     <script src="{{ asset('/page/lib/tempusdominus/js/moment.min.js') }}"></script>
     <script src="{{ asset('/page/lib/tempusdominus/js/moment-timezone.min.js') }}"></script>
     <script src="{{ asset('/page/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js') }}"></script>
-
+<style>
+    .slideInDown{
+        font-size: calc(1.525rem + 6.5vw) !important;
+        font-weight: 300;
+        font-family: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji" !important;
+    }
+    .slideInDown1{
+        font-size: 1.5rem;
+        font-weight: 300;
+        font-family: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji" !important;
+    }
+    hr {
+        height: 1px !important;
+        background-color: white !important;
+        display: block !important;
+        margin: auto !important;
+        width: 50%;
+    }
+</style>
 </body>
-
 </html>

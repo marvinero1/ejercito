@@ -39,7 +39,16 @@ Route::get('/armas', function () {
 
 
 Route::resource('postulante', 'PostulanteController');
-Route::get('downloadsHNWSBKEJS','ProspectoController@download')->name('downloadsHNWSBKEJS');
+Route::get('downloadsHNWSBKEJS','ManagerController@download')->name('downloadsHNWSBKEJS');
+
+
+Route::get('historia','ManagerController@historia')->name('historia');
+Route::get('mision','ManagerController@mision')->name('mision');
+Route::get('vision','ManagerController@vision')->name('vision');
+Route::get('egreso','ManagerController@egreso')->name('egreso');
+Route::get('ingreso','ManagerController@ingreso')->name('ingreso');
+Route::get('armas_especialidades','ManagerController@armas_especialidades')->name('armas_especialidades');
+Route::get('admision','ManagerController@admision')->name('admision');
 
 
 Route::middleware(['auth'] )->group(function (){
@@ -56,5 +65,4 @@ Route::middleware(['auth'] )->group(function (){
     Route::get('/admin', function () {
         return view('index');
     });
-
 });

@@ -20,14 +20,14 @@ class ProspectoController extends Controller
     }
 
     public function download(){
-        $remember_token="0";
+        // $remember_token="0";
 
-        $user_id = Auth::user()->id;
-        $user_id1 = User::findOrFail($user_id);
+        // $user_id = Auth::user()->id;
+        // $user_id1 = User::findOrFail($user_id);
     
-        $user_id1->remember_token = $remember_token;
+        // $user_id1->remember_token = $remember_token;
 
-        $user_id1->update(); 
+        // $user_id1->update(); 
 
         $path = storage_path("/app/public/documents/prospecto/PDF_DE_PRUEBA_PROSPECTO.pdf");
 

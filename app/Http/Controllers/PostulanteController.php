@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 use App\Postulante;
 use App\User;
+use Throwable;
 use Illuminate\Support\Facades\Hash;
 use Session;
 
@@ -22,8 +23,8 @@ class PostulanteController extends Controller
         // $users = DB::table('users')->with('roles')->;
         //return view('admin.users.index', ['users' => User::with('roles')->sortable(['email' => 'asc'])->paginate()]);
         //    return view('usuarios.index', compact('postulantes'));
-        return view('postulantes.create');
-
+        $descarga = 0;
+        return view('postulantes.create', compact('descarga'));
     }
 
     /**
@@ -45,8 +46,9 @@ class PostulanteController extends Controller
     public function store(Request $request){
         $imagen = null;
         $path = storage_path("/app/public/documents/prospecto/PDF_DE_PRUEBA_PROSPECTO.pdf");
+        $descarga = 1;
+        $email = $request->email;
         
-
         $request->validate([
             'primer_nombre' => 'required',
             'segundo_nombre' => 'nullable', 
@@ -55,45 +57,54 @@ class PostulanteController extends Controller
             'email' => 'required',
         ]);
 
-        if(request()->has('imagen')){
-            $imagesUploaded = request()->file('imagen');
-            $imageName = time() . '.' . $imagesUploaded->getClientOriginalExtension();          
-            $imagenpath = public_path('/images/bono/');          
-            $imagesUploaded->move($imagenpath, $imageName);
-            $imagen = '/images/bono/' .$imageName;
-            }  
-
-            $contra=rand(10,100000);
+        try {
+            if(request()->has('imagen')){
+                $imagesUploaded = request()->file('imagen');
+                $imageName = time() . '.' . $imagesUploaded->getClientOriginalExtension();          
+                $imagenpath = public_path('/images/bono/');          
+                $imagesUploaded->move($imagenpath, $imageName);
+                $imagen = '/images/bono/' .$imageName;
+                }  
     
-            Postulante::create([
-                'primer_nombre' => $request->primer_nombre,
-                'segundo_nombre' => $request->segundo_nombre,
-                'primer_apellido' => $request->primer_apellido,
-                'segundo_apellido' => $request->segundo_apellido,
-                'email' => $request->email,
-                'celular' => $request->celular,
-                'ciudad' => $request->ciudad,
-                'whatsapp' => $request->whatsapp,
-                'fecha_nacimiento'=> $request->fecha_nacimiento,
-                'telefono' => $request->telefono,
-                'boucher'=>$request->$imagen,
-                'code'=>$contra,
-                'inicio_sesion'=>'null',
-            ]);
+                $contra=rand(10,100000);
+        
+                Postulante::create([
+                    'primer_nombre' => $request->primer_nombre,
+                    'segundo_nombre' => $request->segundo_nombre,
+                    'primer_apellido' => $request->primer_apellido,
+                    'segundo_apellido' => $request->segundo_apellido,
+                    'email' => $request->email,
+                    'celular' => $request->celular,
+                    'ciudad' => $request->ciudad,
+                    'whatsapp' => $request->whatsapp,
+                    'fecha_nacimiento'=> $request->fecha_nacimiento,
+                    'telefono' => $request->telefono,
+                    'boucher'=>$request->$imagen,
+                    'code'=>$contra,
+                    'inicio_sesion'=>'null',
+                ]);
+    
+                User::create([
+                    'name' => $request->primer_nombre,
+                    'email' => $request->email,
+                    'role' => "usuario",
+                    'password' => Hash::make($contra),
+                ]);
+            
+    
+            Session::flash('message','Formulario Exitoso!');
+            
+            return view('postulantes.descarga');
+        } catch (Throwable $e) {
+            return view('postulantes.error', compact('email'));
+        }
 
-            User::create([
-                'name' => $request->primer_nombre,
-                'email' => $request->email,
-                'role' => "usuario",
-                'password' => Hash::make($contra),
-            ]);
         
 
-        Session::flash('message','Formulario Exitoso!');
-
-        $path = storage_path("/app/public/documents/prospecto/PDF_DE_PRUEBA_PROSPECTO.pdf");
-
-        return response()->download($path);     
+        // $path = storage_path("/app/public/documents/prospecto/PDF_DE_PRUEBA_PROSPECTO.pdf");
+        // return response()->download($path);
+         
+        // return view('postulantes.create', compact('descarga'));
     }
 
     /**
