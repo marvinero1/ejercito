@@ -10,7 +10,7 @@
                     <h5 class="card-title">“SGTO. MAXIMILIANO PAREDES TEJERINA”</h5>
                    
                     <h5 class="card-text">RESEÑA HISTORICA</h5>
-                    <p>En los albores de la República, cuando transcurría el año 1826, el Presidente de la República,
+                    <p class="card-text">En los albores de la República, cuando transcurría el año 1826, el Presidente de la República,
                         Mariscal Antonio José de Sucre, ordenó la creación de “Escuelas de primeras letras para
                         Sargentos y Cabos”, en cada Batallón del Ejército Nacional; para tal efecto se emitió la
                         circular de fecha 31 de mayo de 1826, siendo este, el punto histórico de creación de la Escuela
@@ -20,7 +20,7 @@
                         de los Sargentos y Cabos, a pesar de su imprescindible necesidad.
                     </p>
 
-                    <p>Al inicio del año 1900, se adquirió una instalación en la ciudad de La Paz, destinada a los
+                    <p class="card-text">Al inicio del año 1900, se adquirió una instalación en la ciudad de La Paz, destinada a los
                         Institutos Militares del Ejército, constituidos por la Escuela Superior de Guerra, el Colegio
                         Militar y la Escuela de Clases.
 
