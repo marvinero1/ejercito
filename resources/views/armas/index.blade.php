@@ -41,10 +41,10 @@
                                 Ingenieria
                             </button>
                         </div>
-                        <div class="col">
+                        <div class="col" style="overflow: hidden;text-overflow: ellipsis;">
                             <button class="btn btn-secondary" type="button" data-toggle="collapse"
-                                data-target="#collapseExample5" aria-expanded="false" aria-controls="collapseExample5">
-                                Comunicaciones
+                            data-target="#collapseExample5" aria-expanded="false" aria-controls="collapseExample5" >
+                            Comunicaciones
                             </button>
                         </div>
                     </div><br>
@@ -56,7 +56,7 @@
                                 Motores
                             </button>
                         </div>
-                        <div class="col">
+                        <div class="col" style="overflow: hidden;text-overflow: ellipsis;">
                             <button class="btn btn-secondary" type="button" data-toggle="collapse"
                                 data-target="#collapseExample7" aria-expanded="false" aria-controls="collapseExample7">
                                 Material Belico
@@ -97,7 +97,7 @@
                                         </div>
                                         <div class="col-md-3">
                                             <img class="w-100"
-                                                src="images/img/especialidades/1Infantería/infanteria1.jpg"
+                                                src="images/img/especialidades/1Infanteria/infanteria1.jpg"
                                                 alt="infanteria">
                                         </div>
                                     </div>
@@ -116,13 +116,13 @@
                                         </div>
                                         <div class="col-md-3">
                                             <img class="w-100"
-                                                src="images/img/especialidades/2Caballería/caballeria1.jpg"
+                                                src="images/img/especialidades/2Caballe/caballeria1.jpg"
                                                 alt="caballeria">
                                         </div>
 
                                         <div class="col-md-12"><br>
                                             <video width="620" height="320" controls controlsList="nodownload">
-                                                <source src="images/img/especialidades/2Caballería/caballeria.mp4"
+                                                <source src="images/img/especialidades/2Caballe/caba.mp4"
                                                     type="video/mp4">
                                                 Your browser does not support the video tag.
                                             </video>

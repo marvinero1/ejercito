@@ -33,7 +33,7 @@
     </div><br><br>
 </div>
 <style>
-    .card-text {
+    p {
         text-align: justify;
     }
 </style>

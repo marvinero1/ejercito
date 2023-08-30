@@ -49,7 +49,7 @@
                             class="form-control border-0 datepicker-input" required>
                       </div><br><br>
                       <button class="btn btn-secondary" onclick="buscarCodigo()"><i
-                              class="fa fa-calendar"></i>&nbsp;
+                              class="fa fa-check"></i>&nbsp;
                           Validar Codigo
                       </button>
                     </div><br>

@@ -45,21 +45,21 @@
     </div>
 
     <div class="row">
-        <div class="col md-4"><br>
-            <div class="card text-center" style="width: 19rem;">
+        <div class="col-md-6">
+            <div class="card text-center" style="width: 19rem; display: block;margin: auto;">
                 <div class="card-body">
                     <img class="w-100" src="images/img/ingreso/imagen4.png" alt="image">
                 </div>
             </div>
         </div>
-        <div class="col-md-4"><br>
-            <div class="card text-center" style="width: 18rem;">
+        <div class="col-md-6">
+            <div class="card text-center" style="width: 18rem;display: block;margin: auto;">
                 <div class="card-body">
                     <img class="w-100" src="images/img/ingreso/imagen5.png" alt="image">
                 </div>
             </div>
         </div>
-    </div>
+    </div><br>
 
     <div class="row">
         <a href="/" class="btn btn-secondary"><i class="fa fa-arrow-circle-left"></i> Ir a Inicio</a>
@@ -69,5 +69,6 @@
     .card-text {
         text-align: justify;
     }
+
 </style>
 @endsection
