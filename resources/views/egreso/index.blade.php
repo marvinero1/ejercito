@@ -17,9 +17,9 @@
             <div class="card">
                 <div class="card-body">
                     <h4>ESCUELA MILITAR DE SARGENTOS DEL EJÉRCITO</h4>
-                    <h5 class="card-title">“SGTO. MAXIMILIANO PAREDES TEJERINA”</h5>
+                    <h4>“SGTO. MAXIMILIANO PAREDES TEJERINA”</h4>
 
-                    <h5 class="card-text">EGRESO</h5>
+                    <h4 class="card-text">EGRESO</h4>
 
                     <p class="card-text">
                         Egresar como Sargento Inicial del Ejército, con el grado académico de Técnico Superior en
@@ -58,8 +58,9 @@
     </div><br><br>
 </div>
 <style>
-    .card-text {
-        text-align: justify;
+   .p, p{ text-align: justify; }
+    h4{
+        text-align: center;
     }
 </style>
 @endsection

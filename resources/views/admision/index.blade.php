@@ -7,9 +7,9 @@
             <div class="card">
                 <div class="card-body">
                     <h4>ESCUELA MILITAR DE SARGENTOS DEL EJÉRCITO</h4>
-                    <h5 class="card-title">“SGTO. MAXIMILIANO PAREDES TEJERINA”</h5>
+                    <h4>“SGTO. MAXIMILIANO PAREDES TEJERINA”</h4>
                    
-                    <h5 class="card-text">ADMISIONES</h5>
+                    <h4 class="card-text">ADMISIONES</h4>
                     <img class="w-100" src="images/img/admisiones/admision2024.jpg" alt="admision"> 
                     <br><br><br>
 
@@ -22,4 +22,10 @@
         </div>
     </div>
 </div>
+<style>
+    .p, p{ text-align: justify; }
+     h4{
+         text-align: center;
+     }
+ </style>
 @endsection

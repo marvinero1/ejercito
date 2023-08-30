@@ -3,13 +3,23 @@
 @section('content')
 <div class="container pt-5">
     <div class="row">
+        <div class="col-md-6 ">
+            <div class="card text-center" style="width: 19rem; display: block;margin: auto;">
+                <div class="card-body">
+                    <img class="w-100" src="images/img/ingreso/imagen4.png" alt="image">
+                </div>
+            </div>
+        </div>
+    </div><br>
+
+    <div class="row">
         <div class="col md-12">
             <div class="card">
                 <div class="card-body">
                     <h4>ESCUELA MILITAR DE SARGENTOS DEL EJÉRCITO</h4>
-                    <h5 class="card-title">“SGTO. MAXIMILIANO PAREDES TEJERINA”</h5>
+                    <h4>“SGTO. MAXIMILIANO PAREDES TEJERINA”</h4>
 
-                    <h5 class="card-text">INGRESO</h5>
+                    <h4 class="card-text">INGRESO</h4>
 
                     <p class="card-text">
                         Joven o señorita boliviana de nacimiento, con suficientes conocimientos de los contenidos
@@ -45,15 +55,8 @@
     </div>
 
     <div class="row">
-        <div class="col-md-6">
-            <div class="card text-center" style="width: 19rem; display: block;margin: auto;">
-                <div class="card-body">
-                    <img class="w-100" src="images/img/ingreso/imagen4.png" alt="image">
-                </div>
-            </div>
-        </div>
-        <div class="col-md-6">
-            <div class="card text-center" style="width: 18rem;display: block;margin: auto;">
+        <div class="col-md">
+            <div class="card text-right" style="width: 18rem;float:right;">
                 <div class="card-body">
                     <img class="w-100" src="images/img/ingreso/imagen5.png" alt="image">
                 </div>
@@ -66,9 +69,9 @@
     </div><br><br>
 </div>
 <style>
-    .card-text {
-        text-align: justify;
+    .p, p{ text-align: justify; }
+    h4{
+        text-align: center;
     }
-
 </style>
 @endsection

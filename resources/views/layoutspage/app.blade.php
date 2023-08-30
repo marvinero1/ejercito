@@ -83,12 +83,8 @@
 
 
 <!-- Service Start -->
-<div class="container-xxl service py-5">
+{{-- <div class="container-xxl service py-5">
     <div class="container">
-        {{-- <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-            <h6 class="text-primary text-uppercase">// Our Services //</h6>
-            <h1 class="mb-5">Explore Our Services</h1>
-        </div> --}}
         <div class="row g-4 wow fadeInUp" data-wow-delay="0.3s">
             <div class="col-lg-6">
                 <div class="tab-content w-100">
@@ -109,10 +105,7 @@
                                     Nacional; para tal efecto se emitió la circular de fecha 31 de mayo de 1826, siendo
                                     este, el punto histórico de creación de la Escuela Militar de Sargentos del
                                     Ejército.</p>
-                                {{-- <p><i class="fa fa-check text-success me-3"></i>Quality Servicing</p>
-                                <p><i class="fa fa-check text-success me-3"></i>Expert Workers</p>
-                                <p><i class="fa fa-check text-success me-3"></i>Modern Equipment</p> --}}
-                                <a href="/historia" class="btn btn-secondary py-3 px-5 mt-3">Leer Más<i
+                                    <a href="/historia" class="btn btn-secondary py-3 px-5 mt-3">Leer Más<i
                                         class="fa fa-arrow-right ms-3"></i></a>
                             </div>
                         </div>
@@ -146,7 +139,7 @@
 
         </div>
     </div>
-</div>
+</div> --}}
 <!-- Service End -->
 
 <!-- Booking Start -->
@@ -155,7 +148,7 @@
         <div class="row gx-5">
             <div class="col-lg-6 py-5">
                 <div class="py-5">
-                    <h1 class="text-black mb-4">Registro</h1>
+                    <h1 class="text-white mb-4">Registro</h1>
                     <p class="text-white mb-0">Llene el formulario con los datos del postulante,
                         una vez llenado el formulario podra acceder a su descarga.</p>
                 </div>
@@ -173,7 +166,8 @@
 </div>
 <style>
     .wow1 {
-        background-image: url(images/img/carousel-bg-4.jpg);
+        /* background-image: url(images/img/carousel-bg-4.jpg); */
+        background-color: #0B2154;
         background-repeat: no-repeat;
         background-size: cover;
         background-position: bottom;

@@ -7,9 +7,9 @@
             <div class="card">
                 <div class="card-body">
                     <h4>ESCUELA MILITAR DE SARGENTOS DEL EJÉRCITO</h4>
-                    <h5 class="card-title">“SGTO. MAXIMILIANO PAREDES TEJERINA”</h5>
+                    <h4 class="text-center">“SGTO. MAXIMILIANO PAREDES TEJERINA”</h4>
 
-                    <h5 class="card-text">VISION</h5>
+                    <h4 class="text-center">VISION</h4>
                     <p class="card-text">Constituirse en el mejor Instituto de Pre-Grado de Sargentos de las Fuerzas Armadas, que permita
                         al Ejército contar con recursos humanos de alta calidad profesional en áreas operativas,
                         técnicas y físicas, con conocimientos de artes marciales, y profundos valores Ético-Morales y de
@@ -34,8 +34,9 @@
     </div><br><br>
 </div>
 <style>
-    .card-text {
-        text-align: justify;
+    .p, p{ text-align: justify; }
+    h4{
+        text-align: center;
     }
 </style>
 @endsection

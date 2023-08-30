@@ -6,10 +6,13 @@
         <div class="col md-8"><br>
             <div class="card">
                 <div class="card-body">
-                    <h4>ESCUELA MILITAR DE SARGENTOS DEL EJÉRCITO</h4>
-                    <h5 class="card-title">“SGTO. MAXIMILIANO PAREDES TEJERINA”</h5>
+                    <div class="text-center">
+                      <h4>ESCUELA MILITAR DE SARGENTOS DEL EJÉRCITO</h4>
+                        <h4>“SGTO. MAXIMILIANO PAREDES TEJERINA”</h4>
                    
-                    <h5 class="card-text">RESEÑA HISTORICA</h5>
+                        <h4 class="card-text">RESEÑA HISTORICA</h4><br>
+                    </div>
+                    
                     <p>En los albores de la República, cuando transcurría el año 1826, el Presidente de la República,
                         Mariscal Antonio José de Sucre, ordenó la creación de “Escuelas de primeras letras para
                         Sargentos y Cabos”, en cada Batallón del Ejército Nacional; para tal efecto se emitió la
@@ -111,6 +114,9 @@
     </div><br><br>
 </div>
 <style>
-    .card-text { text-align: justify; }
+    .p, p{ text-align: justify; }
+    h4{
+        text-align: center;
+    }
 </style>
 @endsection
