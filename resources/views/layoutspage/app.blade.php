@@ -147,30 +147,37 @@
     <div class="container">
         <div class="row gx-5">
             <div class="col-lg-6 py-5">
-                <div class="py-5">
-                    <h1 class="text-white mb-4">Registro</h1>
+                 <div class="py-5">
+                   <h1 class="text-secondary-postulate mb-4">REGISTRO</h1>
                     <p class="text-white mb-0">Llene el formulario con los datos del postulante,
                         una vez llenado el formulario podra acceder a su descarga.</p>
-                </div>
+                </div> 
             </div>
             <div class="col-lg-6">
                 <div class="h-100 d-flex flex-column justify-content-center text-center p-5 wow zoomIn"
                     data-wow-delay="0.6s">
-                    <h1 class="text-white mb-4">Postulante</h1>
-                    <a class="btn btn-secondary w-100 py-3" type="button" href="/postulante"><i class="fa fa-book"></i>
-                        Postulate</a>
+                    <h1 class="text-secondary-postulate mb-4">POSTULANTE</h1>
+                    <a class="btn btn-link w-100 py-3 overflow-hidden text-white" type="button" href="/postulante" 
+                    style="border: white 1px solid;">
+                        <i class="fa fa-book text-white"></i>
+                        POSTULATE
+                    </a>
                 </div>
             </div>
         </div>
     </div>
 </div>
 <style>
+    .text-secondary-postulate{
+        -webkit-text-stroke: 1px white;
+    }
     .wow1 {
-        /* background-image: url(images/img/carousel-bg-4.jpg); */
+        background-image: url(images/img/postulate.jpeg);
         background-color: #0B2154;
         background-repeat: no-repeat;
         background-size: cover;
-        background-position: bottom;
+        background-position: initial;
+        /* background-blend-mode: difference; */
     }
 </style>
 <!-- Booking End -->
@@ -181,7 +188,7 @@
     <div class="container">
         <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
             <h6 class="text-secondary text-uppercase"> FORMAMOS SARGENTOS PARA EL FUTURO DE BOLIVIA </h6>
-            <h1 class="mb-5">Entrenamiento para la Colaboracion al Desarrollo Nacional</h1>
+            <h1 class="mb-5">ACTIVIDADES DE EFICIENCIA COMBATIVA</h1>
         </div>
         <div class="row g-4">
             <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
@@ -193,7 +200,7 @@
                         </div>
                     </div>
                     <div class="bg-light  p-4">
-                        <h5 class="fw-bold mb-0 text-center">Mente Sana En Cuerpo Sano</h5>
+                        <h5 class="fw-bold mb-0 text-center">MENTE SANA EN CUERPO SANO</h5>
                         <div  style="text-align: justify">
                             <small>Desarrollamos la responsabilidad y disciplina para fortalecer
                             la condición física,
@@ -219,7 +226,7 @@
                         </div>
                     </div>
                     <div class="bg-light text-center p-4">
-                        <h5 class="fw-bold mb-0">FORJANDO EL ESPIRTU MILITAR DE LOS ALUMNOS</h5>
+                        <h5 class="fw-bold mb-0">FORJANDO EL ESPÍRITU MILITAR DE LOS ALUMNOS</h5>
                         <div  style="text-align: justify">
                             <small>Desarrollamos la disciplina y liderazgo en la instrucción de patrullas con los Alumnos
                                 demostrando las generalidades sobre la instrucción de patrullaje , comprendiendo las
@@ -232,6 +239,22 @@
                         </div>                        
                     </div>
                 </div>
+            </div>
+            <div class="row">
+               <div class="col text-center"><br><br>
+                <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                    + Más
+                </button><br><br>
+
+
+                <div class="collapse" id="collapseExample">
+                    <div class="card card-body" style="display: block;text-align:center;">
+                        <video width="620" height="420" controls controlsList="nodownload">
+                            <source src="images/img/videos/videoInicio.mp4" type="video/mp4" alt='videoEMSE'>
+                        </video>
+                    </div>
+                  </div>
+                </div>  
             </div>
         </div>
     </div>

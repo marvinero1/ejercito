@@ -1,9 +1,9 @@
 <!-- /.content-wrapper -->
 <footer class="main-footer">
-    <strong>Copyright &copy; 2023 <a href="http://marvinero.link">marvinero.link</a>.</strong>
-    All rights reserved.
+    <strong>Copyright &copy; {{ date('Y') }} </strong>
+      Todos los Derechos Reservados.
     <div class="float-right d-none d-sm-inline-block">
-      <b>Version</b> 0.1.1
+      <b>Version</b> 0.1.3
     </div>
   </footer>
 

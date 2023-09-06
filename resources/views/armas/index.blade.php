@@ -20,31 +20,56 @@
                         <div class="col">
                             <button class="btn btn-secondary" type="button" data-toggle="collapse"
                                 data-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample1">
-                                Infanteria
+                                INFANTERIA
                             </button>
                         </div>
                         <div class="col">
                             <button class="btn btn-secondary" type="button" data-toggle="collapse"
                                 data-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2">
-                                Caballeria
+                                CABALLERIA
                             </button>
                         </div>
                         <div class="col">
                             <button class="btn btn-secondary" type="button" data-toggle="collapse"
                                 data-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample3">
-                                Artilleria
+                                ARTILLERIA
                             </button>
                         </div>
                         <div class="col">
                             <button class="btn btn-secondary" type="button" data-toggle="collapse"
                                 data-target="#collapseExample4" aria-expanded="false" aria-controls="collapseExample4">
-                                Ingenieria
+                                INGENIERIA
                             </button>
                         </div>
+                        
+                    </div><br>
+
+                    <div class="row">
                         <div class="col" style="overflow: hidden;text-overflow: ellipsis;">
                             <button class="btn btn-secondary" type="button" data-toggle="collapse"
                             data-target="#collapseExample5" aria-expanded="false" aria-controls="collapseExample5" >
-                            Comunicaciones
+                            COMUNICACIONES
+                            </button>
+                        </div>
+
+                        <div class="col">
+                            <button class="btn btn-secondary" type="button" data-toggle="collapse"
+                                data-target="#collapseExample6" aria-expanded="false" aria-controls="collapseExample6">
+                                MOTORES
+                            </button>
+                        </div>
+
+                        <div class="col">
+                            <button class="btn btn-secondary" type="button" data-toggle="collapse"
+                                data-target="#collapseExample11" aria-expanded="false" aria-controls="collapseExample11">
+                                TÉCNICOS EN AVIACIÓN
+                            </button>
+                        </div>
+
+                        <div class="col">
+                            <button class="btn btn-secondary" type="button" data-toggle="collapse"
+                                data-target="#collapseExample8" aria-expanded="false" aria-controls="collapseExample8">
+                                SANIDAD
                             </button>
                         </div>
                     </div><br>
@@ -52,35 +77,25 @@
                     <div class="row">
                         <div class="col">
                             <button class="btn btn-secondary" type="button" data-toggle="collapse"
-                                data-target="#collapseExample6" aria-expanded="false" aria-controls="collapseExample6">
-                                Motores
-                            </button>
-                        </div>
-                        <div class="col" style="overflow: hidden;text-overflow: ellipsis;">
-                            <button class="btn btn-secondary" type="button" data-toggle="collapse"
-                                data-target="#collapseExample7" aria-expanded="false" aria-controls="collapseExample7">
-                                Material Belico
-                            </button>
-                        </div>
-                        <div class="col">
-                            <button class="btn btn-secondary" type="button" data-toggle="collapse"
-                                data-target="#collapseExample8" aria-expanded="false" aria-controls="collapseExample8">
-                                Sanidad
-                            </button>
-                        </div>
-                        <div class="col">
-                            <button class="btn btn-secondary" type="button" data-toggle="collapse"
                                 data-target="#collapseExample9" aria-expanded="false" aria-controls="collapseExample9">
-                                Intendencia
+                                INTENDENCIA
                             </button>
                         </div>
                         <div class="col">
                             <button class="btn btn-secondary" type="button" data-toggle="collapse"
                                 data-target="#collapseExample10" aria-expanded="false"
                                 aria-controls="collapseExample10">
-                                Inteligencia
+                                INTELIGENCIA
                             </button>
                         </div>
+                        
+                        <div class="col" style="overflow: hidden;text-overflow: ellipsis;">
+                            <button class="btn btn-secondary" type="button" data-toggle="collapse"
+                                data-target="#collapseExample7" aria-expanded="false" aria-controls="collapseExample7">
+                                MATERIAL BELICO
+                            </button>
+                        </div>
+                        
                     </div><br>
 
                     <div>
@@ -89,6 +104,7 @@
                                 <div class="card card-body">
                                     <div class="row">
                                         <div class="col-md-9" style="margin: auto;">
+                                            <h2>INFANTERIA</h2>
                                             Es el Arma básica del Ejército. Está organizada, equipada e instruida para
                                             establecer contacto, entrar en combate para aniquilar al enemigo, mediante
                                             el fuego,
@@ -109,6 +125,8 @@
                                 <div class="card card-body">
                                     <div class="row">
                                         <div class="col-md-9" style="margin: auto;">
+                                            <h2>CABALLERIA</h2>
+
                                             Es el Arma organizada, equipada e instruida para establecer contacto, entrar
                                             en combate para destruir al enemigo, mediante el fuego, movimiento y choque,
                                             aprovechando su gran movilidad y maniobrabilidad táctica y estratégica
@@ -136,6 +154,8 @@
                                 <div class="card card-body">
                                     <div class="row">
                                         <div class="col-md-9" style="margin: auto;">
+                                            <h2>ARTILLERÍA</h2>
+
                                             Es el Arma organizada, equipada e instruida, táctica y técnicamente, para
                                             conducir potentes masas de fuego sobre grandes espacios, tanto en el frente
                                             como en la profundidad del campo de batalla.
@@ -161,6 +181,8 @@
                                 <div class="card card-body">
                                     <div class="row">
                                         <div class="col-md-9" style="margin: auto;">
+                                            <h2>INGENIERÍA</h2>
+
                                             Es el Arma organizada, equipada e instruida, táctica y técnicamente, para
                                             proporcionar apoyo de combate y servicio técnico a las demás Armas, mediante
                                             la ejecución de trabajos de movilidad, contra movilidad y supervivencia,
@@ -180,6 +202,8 @@
                                 <div class="card card-body">
                                     <div class="row">
                                         <div class="col-md-9" style="margin: auto;">
+                                            <h2>COMUNICACIONES</h2>
+
                                             Es el Arma organizada, equipada e instruida para proporcionar apoyo de
                                             combate y servicio técnico a las otras Armas mediante: la instalación,
                                             operación y mantenimiento del sistema de comunicaciones, permitiendo el
@@ -209,6 +233,8 @@
                                 <div class="card card-body">
                                     <div class="row">
                                         <div class="col-md-9" style="margin: auto;">
+                                            <h2>MOTORES</h2>
+
                                             Servicio técnico encargado del mantenimiento de vehículos, transporte de
                                             tropas y abastecimiento de material militar, tanto en tiempo de paz como en
                                             tiempo de guerra.
@@ -226,6 +252,8 @@
                                 <div class="card card-body">
                                     <div class="row">
                                         <div class="col-md-9" style="margin: auto;">
+                                            <h2>MATERIAL BÉLICO</h2>
+
                                             Servicio técnico que se encarga del abastecimiento y distribución del
                                             armamento, munición y explosivos. Asimismo, tiene la responsabilidad de la
                                             reparación, conservación y mantenimiento de todo el armamento.
@@ -250,6 +278,8 @@
                                 <div class="card card-body">
                                     <div class="row">
                                         <div class="col-md-9" style="margin: auto;">
+                                            <h2>SANIDAD</h2>
+
                                             Servicio técnico que satisface las necesidades en la atención pre-
                                             hospitalaria del personal de la Institución relacionada con la atención
                                             sanitaria en primeros auxilios, recuperación, prevención de la salud y
@@ -268,6 +298,8 @@
                                 <div class="card card-body">
                                     <div class="row">
                                         <div class="col-md-9" style="margin: auto;">
+                                            <h2>INTENDENCIA</h2>
+
                                             Servicio técnico, encargado de satisfacer a las tropas en medios de vida y
                                             combate, referidos a abastecimientos de intendencias.
                                         </div>
@@ -285,6 +317,8 @@
                                 <div class="card card-body">
                                     <div class="row">
                                         <div class="col-md-9" style="margin: auto;">
+                                            <h2>INTELIGENCIA</h2>
+
                                             Es el Arma organizada e instruida para apoyo de las operaciones de
                                             inteligencia en una PP. UU. y/o compañías de inteligencia, tanto en tiempo
                                             de paz como en tiempo de guerra.
@@ -293,6 +327,24 @@
                                             <img class="w-100"
                                                 src="images/img/especialidades/10Inteligencia/inteligencia1.jpg"
                                                 alt="inteligencia1">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="collapse" id="collapseExample11">
+                                <div class="card card-body">
+                                    <div class="row">
+                                        <div class="col-md-9" style="margin: auto;">
+                                            <h2>AVIACION</h2>
+
+                                            Servicio técnico, encargado de satisfacer a las tropas en medios de vida y combate, referidos a abastecimientos de intendencias.
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img class="w-100"
+                                                src="images/img/especialidades/11Aviacion/aviacion1.jpg"
+                                                alt="aviacion1">
                                         </div>
                                     </div>
                                 </div>

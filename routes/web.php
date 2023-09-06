@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\PostulanteController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -19,8 +19,6 @@ Route::get('/', function () {
     return view('layoutspage.app');
 });
 
-
-
 Route::get('/historia', function () {
     return view('historica.index');
 });
@@ -37,9 +35,8 @@ Route::get('/armas', function () {
     return view('armas.index');
 });
 
-
 Route::resource('postulante', 'PostulanteController');
-Route::get('downloadsHNWSBKEJS','ManagerController@download')->name('downloadsHNWSBKEJS');
+Route::resource('codigo', 'CodigosController');
 
 
 Route::get('historia','ManagerController@historia')->name('historia');
@@ -54,13 +51,12 @@ Route::get('admision','ManagerController@admision')->name('admision');
 Route::middleware(['auth'] )->group(function (){
 
     Route::get('/getPostulantes', 'PostulanteController@getPostulantes')->name('getPostulantes');
+    Route::get('/getPostulantesExcel', [PostulanteController::class, 'getPostulantesExcel']);
     Route::get('/getUsuarios', 'PostulanteController@getUsuarios')->name('getUsuarios');
     Route::resource('usuarios', 'UsuarioController');
 
-
     Route::get('/home', 'HomeController@index')->name('home');
     Route::resource('prospecto', 'ProspectoController');
-
 
     Route::get('/admin', function () {
         return view('index');

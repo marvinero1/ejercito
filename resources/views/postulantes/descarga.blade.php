@@ -1,4 +1,4 @@
-@extends('layoutspage.main')
+{{-- @extends('layoutspage.main')
 
 @section('content')
 <link href="https://cdn.jsdelivr.net/npm/bs-stepper/dist/css/bs-stepper.min.css" rel="stylesheet"
@@ -31,8 +31,8 @@
                     <div class="card-header">DESCARGAR DOCUMENTO</div>
 
                     <div class="card-body">
-                        <a type="button" class="btn btn-warning" href="/downloadsHNWSBKEJS"><i
-                                class="fa fa-book"></i> Descargar Prospecto</a>
+                        <a type="button" class="btn btn-warning" href="/downloadsHNWSBKEJS">
+                        <i class="fa fa-book"></i> Descargar Prospecto</a>
                     </div>
                   </div>
                 </div>
@@ -63,4 +63,4 @@
     })
     var stepper4 = new Stepper(document.querySelector('#stepper4'))
 </script>
-@endsection
+@endsection --}}

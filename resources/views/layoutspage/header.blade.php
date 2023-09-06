@@ -98,7 +98,7 @@
             </div>
         </div>
         <div class="carousel-item">
-            <img class="w-100" src="images/img/portada/background-bg-3.jpg" alt="Image">
+            <img class="w-100" src="images/img/portada/background-bg-3.jpeg" alt="Image">
             <div class="carousel-caption d-flex align-items-center">
                 <div class="container">
                     <div class="row align-items-center justify-content-center justify-content-lg-start">
@@ -177,6 +177,26 @@
                 </div>
             </div>
         </div> 
+        <div class="carousel-item">
+            <img class="w-100" src="images/img/portada/background-bg-8.jpeg" alt="Image">
+            <div class="carousel-caption d-flex align-items-center">
+                <div class="container">
+                    <div class="row align-items-center justify-content-center justify-content-lg-start">
+                        <div class="col-12 col-lg-12 text-center text-center">
+                            <p class="display-3 text-white  animated slideInDown1">
+                                EL HONOR SERA MI PRIMERA VIRTUD MILITAR Y MI FUENTE DE INSPIRACION, 
+                            </p>
+                            <p class="display-3 text-white  animated slideInDown1">
+                                OBSERVARÉ DISCIPLINA, LEALTAD EN TODO LUGAR Y CIRCUNSTANCIA.
+                            </p>
+
+                            <hr>
+                            <h1 class="display-3 text-white  animated slideInDown"><strong>E.M.S.E.</strong></h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>

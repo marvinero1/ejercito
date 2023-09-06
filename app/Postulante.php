@@ -24,10 +24,10 @@ class Postulante extends Model
                         'segundo_apellido',
                         'email',
                         'celular',
+                        'ci',
                         'ciudad',
                         'whatsapp',
                         'telefono',
-                        'code',
                         'boucher'
                         ];
 }

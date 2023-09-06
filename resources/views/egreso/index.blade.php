@@ -58,7 +58,7 @@
     </div><br><br>
 </div>
 <style>
-   .p, p{ text-align: justify; }
+   .card-text{ text-align: justify; }
     h4{
         text-align: center;
     }

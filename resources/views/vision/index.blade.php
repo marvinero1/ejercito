@@ -9,7 +9,7 @@
                     <h4>ESCUELA MILITAR DE SARGENTOS DEL EJÉRCITO</h4>
                     <h4 class="text-center">“SGTO. MAXIMILIANO PAREDES TEJERINA”</h4>
 
-                    <h4 class="text-center">VISION</h4>
+                    <h4 class="text-center">VISIÓN</h4>
                     <p class="card-text">Constituirse en el mejor Instituto de Pre-Grado de Sargentos de las Fuerzas Armadas, que permita
                         al Ejército contar con recursos humanos de alta calidad profesional en áreas operativas,
                         técnicas y físicas, con conocimientos de artes marciales, y profundos valores Ético-Morales y de
@@ -34,7 +34,7 @@
     </div><br><br>
 </div>
 <style>
-    .p, p{ text-align: justify; }
+    .card-text{ text-align: justify; }
     h4{
         text-align: center;
     }

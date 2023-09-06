@@ -19,7 +19,7 @@
                     <h4>ESCUELA MILITAR DE SARGENTOS DEL EJÉRCITO</h4>
                     <h4>“SGTO. MAXIMILIANO PAREDES TEJERINA”</h4>
 
-                    <h4 class="card-text">INGRESO</h4>
+                    <h4 class="text-center">INGRESO</h4>
 
                     <p class="card-text">
                         Joven o señorita boliviana de nacimiento, con suficientes conocimientos de los contenidos
@@ -69,7 +69,7 @@
     </div><br><br>
 </div>
 <style>
-    .p, p{ text-align: justify; }
+    .card-text{ text-align: justify; }
     h4{
         text-align: center;
     }

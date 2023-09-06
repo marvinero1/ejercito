@@ -10,10 +10,10 @@
                       <h4>ESCUELA MILITAR DE SARGENTOS DEL EJÉRCITO</h4>
                         <h4>“SGTO. MAXIMILIANO PAREDES TEJERINA”</h4>
                    
-                        <h4 class="card-text">RESEÑA HISTORICA</h4><br>
+                        <h4>RESEÑA HISTORICA</h4><br>
                     </div>
                     
-                    <p>En los albores de la República, cuando transcurría el año 1826, el Presidente de la República,
+                    <p class="card-text">En los albores de la República, cuando transcurría el año 1826, el Presidente de la República,
                         Mariscal Antonio José de Sucre, ordenó la creación de “Escuelas de primeras letras para
                         Sargentos y Cabos”, en cada Batallón del Ejército Nacional; para tal efecto se emitió la
                         circular de fecha 31 de mayo de 1826, siendo este, el punto histórico de creación de la Escuela
@@ -23,7 +23,7 @@
                         de los Sargentos y Cabos, a pesar de su imprescindible necesidad.
                     </p>
 
-                    <p>Al inicio del año 1900, se adquirió una instalación en la ciudad de La Paz, destinada a los
+                    <p class="card-text">Al inicio del año 1900, se adquirió una instalación en la ciudad de La Paz, destinada a los
                         Institutos Militares del Ejército, constituidos por la Escuela Superior de Guerra, el Colegio
                         Militar y la Escuela de Clases.
 
@@ -41,7 +41,7 @@
                         este sector hasta el año 1932, fecha que volvió a ser clausurada a raíz de la Guerra del Chaco.
 
                         En 1932, formando parte del destacamento “AGUIRRE”, los Alumnos de la Escuela Militar de
-                        Sargentos marcharon a la Zona de Operaciones en el Chaco, participando sobresalientemente en las
+                        Sargentos marcharon a la Zona de Operaciones en el Chaco, participando en las
                         acciones de Fortín Fernández, Toledo, Nanawa, Muñoz, Cañada Strongest y Picuiba.
                     </p>
 
@@ -60,17 +60,17 @@
         <div class="card">
             <div class="card-body">
                 <div class="row">
-                    <img src="images/img/historia/imagen1.jpg" alt="image"
+                    <img src="images/img/historia/fachada.jpg" alt="image"
                         style="display: block;margin:auto;width: 60% !important;">
 
                     <div class="col-md-6"><br>
-                        <p> En 1942, durante la presidencia del General Enrique Peñaranda, se entregaron oficialmente
+                        <p class="card-text"> En 1942, durante la presidencia del General Enrique Peñaranda, se entregaron oficialmente
                             las instalaciones de la Escuela de Clases en el barrio de la Muyurina de la ciudad de
                             Cochabamba; posteriormente, se cambió su denominativo a Escuela Militar de Sargentos del
                             Ejército “Sgto. Maximiliano Paredes Tejerina”.
                         </p>
 
-                        <p>en homenaje al centinela héroe del Combate de Riosinho, quien nació en la ciudad de La Paz el
+                        <p class="card-text">en homenaje al centinela héroe del Combate de Riosinho, quien nació en la ciudad de La Paz el
                             21 de agosto de 1879. A la edad de 21 años en el año 1900, marchó al norte del territorio
                             boliviano asistiendo a la Campaña del Acre en cumplimiento al Servicio Militar, como Soldado
                             de la Segunda Compañía del Batallón Independencia al mando de Andrés Muñoz, obteniendo la
@@ -81,7 +81,7 @@
                             negando de esta manera la sorpresa por parte del enemigo.</p>
                     </div>
                     <div class="col-md-6"><br>
-                        <p>Durante la gestión 2009, se iniciaron los trámites respectivos para la construcción de la
+                        <p class="card-text">Durante la gestión 2009, se iniciaron los trámites respectivos para la construcción de la
                             nueva Escuela Militar de Sargentos del Ejército ubicada en la población de Tarata, a 46 Km.
                             de la ciudad de Cochabamba.
 
@@ -114,7 +114,7 @@
     </div><br><br>
 </div>
 <style>
-    .p, p{ text-align: justify; }
+    .card-text{ text-align: justify; }
     h4{
         text-align: center;
     }

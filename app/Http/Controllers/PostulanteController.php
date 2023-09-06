@@ -2,11 +2,13 @@
 
 namespace App\Http\Controllers;
 use App\Postulante;
+use App\Codigo;
 use App\User;
 use Throwable;
 use Illuminate\Support\Facades\Hash;
 use Session;
-
+use Maatwebsite\Excel\Facades\Excel;
+use App\Exports\PostulanteExport;
 use Illuminate\Http\Request;
 
 class PostulanteController extends Controller
@@ -44,67 +46,65 @@ class PostulanteController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request){
-        $imagen = null;
-        $path = storage_path("/app/public/documents/prospecto/PDF_DE_PRUEBA_PROSPECTO.pdf");
-        $descarga = 1;
-        $email = $request->email;
-        
-        $request->validate([
-            'primer_nombre' => 'required',
-            'segundo_nombre' => 'nullable', 
-            'primer_apellido' => 'nullable',
-            'segundo_apellido' => 'nullable',
-            'email' => 'required',
-        ]);
 
+       
         try {
-            if(request()->has('imagen')){
-                $imagesUploaded = request()->file('imagen');
-                $imageName = time() . '.' . $imagesUploaded->getClientOriginalExtension();          
-                $imagenpath = public_path('/images/bono/');          
-                $imagesUploaded->move($imagenpath, $imageName);
-                $imagen = '/images/bono/' .$imageName;
-                }  
+            $codigo_id = $request->codigo_id;
+
+            $request->validate([
+                'primer_nombre' => 'required',
+                'primer_apellido' => 'required',
+                'email' => 'required',
+            ]);
+          
+            Postulante::create([
+                'primer_nombre' => $request->primer_nombre,
+                'segundo_nombre' => $request->segundo_nombre,
+                'primer_apellido' => $request->primer_apellido,
+                'segundo_apellido' => $request->segundo_apellido,
+                'email' => $request->email,
+                'celular' => $request->celular,
+                'ciudad' => $request->ciudad,
+                'ci' => $request->ci,
+                'whatsapp' => $request->whatsapp,
+                'telefono' => $request->telefono,
+                'boucher'=>$request->boucher,
+            ]);
     
-                $contra=rand(10,100000);
-        
-                Postulante::create([
-                    'primer_nombre' => $request->primer_nombre,
-                    'segundo_nombre' => $request->segundo_nombre,
-                    'primer_apellido' => $request->primer_apellido,
-                    'segundo_apellido' => $request->segundo_apellido,
-                    'email' => $request->email,
-                    'celular' => $request->celular,
-                    'ciudad' => $request->ciudad,
-                    'whatsapp' => $request->whatsapp,
-                    'fecha_nacimiento'=> $request->fecha_nacimiento,
-                    'telefono' => $request->telefono,
-                    'boucher'=>$request->$imagen,
-                    'code'=>$contra,
-                    'inicio_sesion'=>'null',
-                ]);
-    
-                User::create([
-                    'name' => $request->primer_nombre,
-                    'email' => $request->email,
-                    'role' => "usuario",
-                    'password' => Hash::make($contra),
-                ]);
+            User::create([
+                'name' => $request->primer_nombre,
+                'email' => $request->email,
+                'role' => "usuario",
+            ]);
+
+            #aca es dodne actualiza su valor de no usado a utilizado
+            $codigo_byId = Codigo::findOrFail($codigo_id);
+
+            $codigo_byId->uso = 'utilizado';
+            $codigo_byId->update(); 
             
-    
-            Session::flash('message','Formulario Exitoso!');
-            
-            return view('postulantes.descarga');
+            Session::flash('message','Formulario Llenado Exitosamente!');
+                        
         } catch (Throwable $e) {
-            return view('postulantes.error', compact('email'));
+            // echo("error?");
+            return view('postulantes.error',);
         }
 
-        
+        return self::download();
+
+        // return view('postulantes.descarga');
 
         // $path = storage_path("/app/public/documents/prospecto/PDF_DE_PRUEBA_PROSPECTO.pdf");
         // return response()->download($path);
          
         // return view('postulantes.create', compact('descarga'));
+    }
+
+    public function download(){
+
+        $path = storage_path("/app/public/documents/prospecto/PDF_DE_PRUEBA_PROSPECTO.pdf");
+
+        return response()->download($path);
     }
 
     /**
@@ -121,10 +121,17 @@ class PostulanteController extends Controller
     public function getPostulantes(Request $request){
         $primer_nombre = $request->get('buscarpor');
         
-        $postulantes = Postulante::where('primer_nombre','like',"%$primer_nombre%")->latest()->get();
+        $postulantes = Postulante::where('primer_nombre','like',"%$primer_nombre%")->latest()->paginate('15');
         //dd($banco);
         return view('postulantes.index', compact('postulantes'));
+
+
     }
+
+    public function getPostulantesExcel(){
+      return Excel::download(new PostulanteExport, 'reporte_postulantes_EMSE.xlsx');
+    }
+
 
     public function getUsuarios(Request $request){
         $primer_nombre = $request->get('buscarpor');

@@ -18,6 +18,9 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link href="favicon.ico" rel="icon">
 </head>
 <bod class="@yield('body_class')">
     <div id="app">
@@ -75,7 +78,6 @@
 
         <main class="">
             @yield('content')
-        
         </main>
     </div>
 </body>
